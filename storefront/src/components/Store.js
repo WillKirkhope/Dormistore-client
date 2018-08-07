@@ -3,7 +3,7 @@ import Product from './Product'
 const Store = (props) => {
   return (
     <div className="store-front">
-      {Product}
+      <Product />
     </div>
   )
 }
