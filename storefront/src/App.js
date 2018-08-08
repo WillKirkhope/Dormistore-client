@@ -6,11 +6,26 @@ import Store from './components/Store'
 import './App.css';
 
 class App extends Component {
+
+state = {
+  products: []
+}
+
+componentDidMount(){
+  fetch('https://dormistore.herokuapp.com/products')
+    .then(response => response.json())
+    .then(productData => {
+      this.setState({products: productData.product})
+    })
+    console.log('data', this.state.products)
+}
+
+
   render() {
     return (
       <div className="App">
       <Header />
-      <Store />
+      <Store products={this.state.products} />
       <Footer />
       </div>
     );

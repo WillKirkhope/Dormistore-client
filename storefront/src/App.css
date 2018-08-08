@@ -14,9 +14,30 @@
   color: white;
 }
 
+.store-front {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 7.5vw 0 7.5vw;
+}
+
 .product-tile {
-  border: solid Black 2px;
-  border-style: outset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 12vw;
+  height: 12vw;
+  margin: 2.5vw 2.5vw 2.5vw 2.5vw;
+  box-sizing: border-box;
+  border: solid black 1px;
+  border-style: dotted;
+  font-size: 1vw;
+}
+
+.product-image {
+  width: 60%;
+  height: 60%;
+  margin: 0 2.5vw 0 2.5vw;
+
 }
 
 .App-title {

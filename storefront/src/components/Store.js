@@ -1,9 +1,13 @@
 import React from 'react';
-import Product from './Product'
+import ProductTile from './ProductTile'
+
 const Store = (props) => {
+const products = props.products.map(product => {
+  return <ProductTile product = {product} />
+})
   return (
     <div className="store-front">
-      <Product />
+      {products}
     </div>
   )
 }
