@@ -4,15 +4,41 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 5vw;
+}
+
+.footer-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 2vw;
 }
 
 .App-header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: #222;
+  height: 6vw;
+  padding: 2vw;
+  font-family: monospace;
+  color: #bdc3c7;
+}
+
+.App-header-title {
+  font-size: 2vw;
+}
+
+/* .App-header button {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+} */
+
+/* .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
-}
+} */
 
 .store-front {
   display: flex;
@@ -28,8 +54,8 @@
   height: 12vw;
   margin: 2.5vw 2.5vw 2.5vw 2.5vw;
   box-sizing: border-box;
-  border: solid black 1px;
-  border-style: dotted;
+  border: #bfc3c9 5px;
+  border-style: outset;
   font-size: 1vw;
 }
 
@@ -62,15 +88,15 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+  width: 2.5vw;
+  height: 2vw;
+  left: 95vw;
+  top: 3vw;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #bdc3c7;
 }
 
 /* Position and sizing of clickable cross button */
