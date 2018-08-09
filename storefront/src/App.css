@@ -27,19 +27,6 @@
   font-size: 2vw;
 }
 
-/* .App-header button {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-} */
-
-/* .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-} */
-
 .store-front {
   display: flex;
   flex-wrap: wrap;
@@ -141,4 +128,17 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+#create-form {
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid darkgrey;
+  min-height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
 }

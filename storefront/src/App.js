@@ -28,8 +28,16 @@ getProducts = () => {
     })
 }
 
-createProduct = () => {
-  console.log('clicked submit')
+createProduct = (event) => {
+  event.preventDefault()
+  fetch('https://dormistore.herokuapp.com/products/create',{
+    method: 'POST',
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify()
+  })
+    .then(response => response.json())
 }
 
 deleteProduct = (event) => {

@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
 class Create extends Component {
+
+  onSubmit = (event) => {
+    this.props.createProduct(event)
+  }
+
   render(){
     return (
 
-      <form className="create-form" onSubmit={this.props.createProduct}>
+      <form className="create-form" onSubmit={this.onSubmit}>
         <label htmlFor="name">Name</label>
         <input type="text" name="name" />
         <label htmlFor="description">Description</label>

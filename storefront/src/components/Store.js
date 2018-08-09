@@ -21,8 +21,10 @@ const products = this.props.products.map(product => {
   return (
     <div className="store-front">
       {products}
-        <button onClick={this.createProduct}>Create Product</button>
-        <section id="application-preview" className={this.state.isToggleOn ? "hidden" : ""}>{this.props.applicationText}</section>
+        <button onClick={this.toggle}>Create Product</button>
+        <section id="create-form" className={this.state.isToggleOn ? "hidden" : ""}>
+          <Create createProduct={this.props.createProduct} />
+        </section>
     </div>
   )
 }
