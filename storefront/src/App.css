@@ -87,7 +87,7 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 2.5vw;
   height: 2vw;
   left: 95vw;

@@ -5,6 +5,7 @@ import Store from './components/Store'
 // import Nav from './components/Nav'
 import './App.css';
 
+
 class App extends Component {
 
 state = {
@@ -17,7 +18,29 @@ componentDidMount(){
     .then(productData => {
       this.setState({products: productData.product})
     })
-    console.log('data', this.state.products)
+}
+
+getProducts = () => {
+  fetch('https://dormistore.herokuapp.com/products')
+    .then(response => response.json())
+    .then(productData => {
+      this.setState({products: productData.product})
+    })
+}
+
+createProduct = () => {
+  console.log('clicked submit')
+}
+
+deleteProduct = (event) => {
+  console.log('delete was clicked')
+  console.log('target',event.target.id)
+
+  const productId = event.target.id
+  fetch(`https://dormistore.herokuapp.com/products/${productId}`, {
+    method: 'DELETE'
+  })
+  .then(() => this.getProducts())
 }
 
 
@@ -25,7 +48,7 @@ componentDidMount(){
     return (
       <div className="App">
       <Header />
-      <Store products={this.state.products} />
+      <Store products={this.state.products} deleteProduct={this.deleteProduct}  createProduct={this.createProduct}/>
       <Footer />
       </div>
     );
