@@ -15,7 +15,7 @@ class Create extends Component {
         <label htmlFor="description">Description</label>
         <input type="text" name="description" />
         <label htmlFor="image">Image</label>
-        <input type="text" name="imageUrl" />
+        <input type="text" name="image" />
         <label htmlFor="price">Price</label>
         <input type= "integer" name="price" />
         <label htmlFor="quantity">Quantity</label>

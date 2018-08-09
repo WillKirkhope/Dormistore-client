@@ -19,13 +19,17 @@ const products = this.props.products.map(product => {
   return <ProductTile product = {product} deleteProduct={this.props.deleteProduct} />
 })
   return (
+    <div>
     <div className="store-front">
       {products}
-        <button onClick={this.toggle}>Create Product</button>
-        <section id="create-form" className={this.state.isToggleOn ? "hidden" : ""}>
-          <Create createProduct={this.props.createProduct} />
-        </section>
     </div>
+    <div className="form-pop-up">
+      <button onClick={this.toggle}>Create Product</button>
+      <section id="create-form" className={this.state.isToggleOn ? "hidden" : ""}>
+        <Create createProduct={this.props.createProduct} />
+      </section>
+    </div>
+  </div>
   )
 }
 }
