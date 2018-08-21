@@ -14,11 +14,7 @@ state = {
 }
 
 componentDidMount(){
-  fetch('https://dormistore.herokuapp.com/products')
-    .then(response => response.json())
-    .then(productData => {
-      this.setState({products: productData.product})
-    })
+  this.getProducts()
 }
 
 getProducts = () => {
@@ -50,18 +46,6 @@ createProduct = (event) => {
   })
     .then(() => this.getProducts())
 }
-
-deleteProduct = (event) => {
-  console.log('delete was clicked')
-  console.log('target',event.target.id)
-
-  const productId = event.target.id
-  fetch(`https://dormistore.herokuapp.com/products/${productId}`, {
-    method: 'DELETE'
-  })
-  .then(() => this.getProducts())
-}
-
 
   render() {
     return (

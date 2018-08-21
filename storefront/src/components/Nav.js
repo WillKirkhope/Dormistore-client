@@ -11,9 +11,9 @@ class Nav extends React.Component {
     return (
       <Menu right={this.props.right}>
           <NavLink to='/'>Home</NavLink>
-          <NavLink to='/productPage'>ProductPage</NavLink>
           <NavLink to='/login'>Login</NavLink>
           <NavLink to='/about'>About</NavLink>
+          <NavLink to='/create'>Create Product</NavLink>
       </Menu>
     );
   }

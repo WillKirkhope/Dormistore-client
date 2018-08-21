@@ -7,6 +7,7 @@ import Nav from "./components/Nav"
 import ProductPage from "./components/ProductPage"
 import Login from "./components/Login"
 import About from "./components/About"
+import Create from './components/Create'
 import Error from "./components/Error"
 
 
@@ -19,9 +20,10 @@ class App extends Component {
           <Nav />
           <Switch>
               <Route path='/' component={Home} exact />
-              <Route path='/:id' component={ProductPage} />
+              <Route path='/products/:id' component={ProductPage} />
               <Route path='/login' component={Login} />
               <Route path='/about' component={About} />
+              <Route path='/create' component={Create} />
               <Route component={Error} />
           </Switch>
         </div>
