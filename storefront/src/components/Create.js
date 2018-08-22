@@ -4,8 +4,29 @@ import Header from './Header'
 
 class Create extends Component {
 
+  createProduct = (event) => {
+    event.preventDefault()
+    let formData = new FormData(event.target)
+    let newProduct = {}
+    newProduct.name = formData.get("name")
+    newProduct.description = formData.get("description")
+    newProduct.image = formData.get("image")
+    newProduct.price = formData.get("price")
+    newProduct.quantity = formData.get("quantity")
+    const body = JSON.stringify(newProduct)
+    event.target.reset()
+
+    fetch('https://dormistore.herokuapp.com/products/create',{
+      method: 'POST',
+      headers: {
+        "content-type": "application/json"
+      },
+      body: body
+    })
+  }
+
   onSubmit = (event) => {
-    this.props.createProduct(event)
+    this.createProduct(event)
   }
 
   render(){
