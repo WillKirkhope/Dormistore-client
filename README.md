@@ -8,12 +8,12 @@
 
 ## Deployed Front-end Link ##
 
-- ''
+- 'https://dormistore-62b0f.firebaseapp.com/'
 
 ## Deployed Back-end Link ##
 
-- ''
+- 'https://dormistore.herokuapp.com/products'
 
 ## Backend Repo ##
 
-- ''
+- 'https://github.com/josh-robbs/dormistore-server'
