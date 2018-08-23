@@ -8,7 +8,7 @@ class Login extends Component {
       <div className="Home">
       <Header />
       <main>
-      <h1>Logs...</h1>
+      <h1>This Page is currently being built and will be available soon!</h1>
       </main>
       <Footer />
       </div>

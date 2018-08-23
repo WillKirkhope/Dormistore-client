@@ -23,6 +23,10 @@
   color: #bdc3c7;
 }
 
+.App-footer {
+  margin-top: 2vw;
+}
+
 .App-header-title {
   font-size: 2vw;
 }
@@ -66,9 +70,60 @@
   to { transform: rotate(360deg); }
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
 
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: solid rgb(179, 182, 188) 2px;
+  border-style: outset;
+  width: 30vw;
+  height: 30vw;
+  margin-top: 5vw;
+  box-shadow: .06vw .06vw .06vw 0vw rgba(0,0,0,0.75);
+  background-color: rgb(220, 224, 232);
+}
 
+.create-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
 
+.form-div {
+  margin-top: 2vw;
+  text-align: right;
+}
+
+.form-button {
+  margin-top: 2vw;
+}
+
+.form-button input {
+  width: 7vw;
+  height: 3vw;
+}
+
+.full-product-image {
+  width: 20vw;
+  height: 20vw;
+}
+
+.full-product-description {
+  width: 50vw;
+}
+
+.about-image {
+  width: 20vw;
+  height: 20vw;
+}
 
 /*Burger menu*/
 

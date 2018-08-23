@@ -34,19 +34,33 @@ class Create extends Component {
       <div className="Home">
       <Header />
       <main>
+        <div className='form'>
         <form className="create-form" onSubmit={this.onSubmit}>
-          <label htmlFor="name">Name</label>
+          <div className="form-div">
+          <label htmlFor="name">Name: </label>
           <input type="text" name="name" />
-          <label htmlFor="description">Description</label>
+          </div>
+          <div className="form-div">
+          <label htmlFor="description">Description: </label>
           <input type="text" name="description" />
-          <label htmlFor="image">Image</label>
+          </div>
+          <div className="form-div">
+          <label htmlFor="image">Image: </label>
           <input type="text" name="image" />
-          <label htmlFor="price">Price</label>
+          </div>
+          <div className="form-div">
+          <label htmlFor="price">Price: </label>
           <input type= "integer" name="price" />
-          <label htmlFor="quantity">Quantity</label>
+          </div>
+          <div className="form-div">
+          <label htmlFor="quantity">Quantity: </label>
           <input type="integer" name="quantity" />
+          </div>
+          <div className="form-button">
           <input type="submit" name="submit" value="Submit" />
+          </div>
         </form>
+        </div>
       </main>
       <Footer />
       </div>
