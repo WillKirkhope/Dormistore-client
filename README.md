@@ -6,6 +6,11 @@
 - Front-end was built with React and deployed on Firebase
 - Back-end was built with Express, PostgreSQL, Knex and deployed it on herokuapp
 
+## To Run Locally ##
+
+- Run npm install to install all dependencies
+- Run npm start in the Client folder to start the react app!
+
 ## Deployed Front-end Link ##
 
 - 'https://dormistore-62b0f.firebaseapp.com/'
