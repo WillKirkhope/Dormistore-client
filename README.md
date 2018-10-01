@@ -9,7 +9,7 @@
 ## To Run Locally ##
 
 - Run npm install to install all dependencies
-- Run npm start in the Client folder to start the react app!
+- Run npm start in the storefront folder to start the react app!
 
 ## Deployed Front-end Link ##
 
